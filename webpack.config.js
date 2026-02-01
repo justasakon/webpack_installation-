@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const StylelintPlugin = require("stylelint-webpack-plugin");
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   entry: './app/index.js',
@@ -40,8 +40,8 @@ module.exports = {
       template: './app/index.html', // optional but recommended
     }),
     new ESLintPlugin(),
-     new StylelintPlugin({
-      files: "**/*.{css,scss}"
+    new StylelintPlugin({
+      files: '**/*.{css,scss}',
     }),
   ],
 
